@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.card {
+    background-color: white;
+    padding: 1.5rem;
+    max-width: 500px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0,0.1);
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+.poster_image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 3px 6px;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 8px 0;
+    margin-bottom: 1.5rem;
+}
+
+.intro {
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.prep_time {
+    background-color: hsl(330, 100%, 98%);
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.prep_time h3 {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    color: hsl(332, 51%, 32%);
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.prep_items {
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.prep_item {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 1.7rem;
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 0.5rem;
+}
+
+.ingredients {
+    margin-bottom: 2rem;
+}
+
+.ing_item {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 2rem 0;
+}
+
+.instruction {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+}
+
+.ins_item {
+    font-size: 0.9rem;
+    margin-bottom: 0.1rem;
+    margin: 4px;
+}
+
+.note {
+    margin-top: 0;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    color: #777;
+}
+
+.nutrition {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.nutrition td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.nutrition tr:last-child td {
+    border-bottom: none;
+}
+
+footer a {
+    font-size: 0.8rem;    
+    margin-top: 16px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    body {
+      padding: 1rem;
+      height: auto;
+      align-items: flex-start;
+    }
+  
+    .card {
+      padding: 1rem;
+      border-radius: 15px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 1.4rem;
+    }
+  
+    .prep_time h3 {
+      font-size: 1rem;
+    }
+  
+    .prep_item,
+    .ing_item,
+    .ins_item {
+      font-size: 1rem;
+    }
+  
+    .prep_items,
+    .instruction {
+      padding-left: 1rem;
+    }
+  
+    .container {
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+  
